@@ -1,0 +1,134 @@
+body {
+	background: #222222;
+}
+
+.header {
+	color: white;
+	text-align: center;	
+	margin-top: 25px;
+	font: normal 35px sans-serif;
+	font-weight: bold;
+	line-height: 26px;
+	border-bottom: 2px solid #666666;
+	height: 50px;
+	padding: 10px 0;
+}
+
+h2 {
+	color:black;
+	text-align: left;
+	font: normal 18.5px sans-serif;
+	background: beige;
+	line-height: 25px;
+	margin-left: 15%;
+	margin-right: 15%;
+	padding: 10px 10px 10px 10px ;
+	margin-bottom: 0px;
+}
+
+.wrapper {
+	width: 100%; 
+	float: left; 
+	margin: 0 20px 0 0;
+}
+
+
+
+#map {
+	margin-left: 1px;
+	width: 100%;
+	height: 600px;
+	border-radius: 5px;
+	width: 70%;
+	margin: 10px auto 0 auto;
+	box-shadow: 5px 6px 78px black;
+}
+
+#category {
+	margin-left: 16%;
+	box-shadow: 10px 10px 10px black;
+ 	background-color:#C0392B;
+	color:white;
+	padding: 30px;
+	font-size: 20px;
+	font-weight:bold;
+	-webkit-transition: 1s ease all;
+		-moz-transition: 1s ease all;
+	  appearance: none;
+	border:0;
+	outline:0;
+	float:left;
+}
+
+.user_select {
+	margin-left: 10%;
+	float: left; 
+	margin-top: 15px;
+}
+
+#tags {
+    background: #C0392B;
+    color: white;
+    border: 1px solid #454545;
+    height: 25px;
+    width: 300px;
+    float:left;
+    margin-left:9%;
+}
+
+#tags:hover {
+    background: #656565
+}
+
+#tags:active {
+    box-shadow: 0 0 20px white
+}
+
+#tags:focus {
+    box-shadow: 0 0 20px white
+}
+
+#types {
+	margin-top: 7px;
+    background: #C0392B;
+    color: white;
+    border: 1px solid #454545;
+    height: 25px;
+    width: 300px;
+    margin-left: 9%;
+    float:left;
+}
+
+#types:hover {
+    background: #656565
+}
+
+#types:active {
+    box-shadow: 0 0 20px white
+}
+
+#types:focus {
+    box-shadow: 0 0 20px white
+}
+
+.ui-autocomplete {
+    color:#C0392B;
+    width: 250px;
+    max-height: 600px;
+    overflow-y: auto; 
+    list-style: none;
+}
+
+.ui-autocomplete-category {
+    font-weight: bold;
+    padding: .2em .4em;
+    background-color: #4785F4;
+    color: #fff;
+}
+
+.ui-menu .ui-menu-item {
+    background: #C0392B;
+    color: #fff;
+    padding-left: 10px;
+}
+

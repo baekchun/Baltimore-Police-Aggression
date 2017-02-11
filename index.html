@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title> Effect of Agressive Policing</title>
+    <link rel = "stylesheet" href="css/styles.css"> 
+  </head>
+  <body>
+    <header>
+      <div class = "header">
+        Does BPD's aggressive policing affect people's view on local govt?
+      </div>
+    </header>
+    <h2 class = "description">
+     <b>Preface:</b> In 2014, faculty from UC Berkeley and Yale published a study, investigating whether New York's stop-and-frisk practices might affect the likelihood of calling 311 in different communities. The authors concluded that intrusive policing made people less likely to reach out to city govt.<br>
+     <br> <b>Goal:</b> I looked for a correlation between BPD's use of force data and 311 service calls made in 2015. Since Baltimore Police Department did not release detailed information on the police stops  they made, I used BPD's data on police use of force incidents that were investigated by the BPD Force Investigation Team instead.</br>
+     <br><em><b>Note:</b> Heatmap is the map of data points of total 311 service calls made. Markers are the data points of where BPD's use of force incidents took place. </br>
+    </h2>
+    <div class = "user_select">
+      <select id = "category" onchange="reset();">
+        <option value = "0"> Please select type of BPD's use of force</option>
+        <option value = "View all"> View all</option>
+        <option value = "Shooting"> Shooting</option>
+        <option value = "Taser"> Taser</option>
+        <option value = "Impact Weapon"> Impact Weapon</option>
+        <option value = "Hands"> Hands</option>
+        <option value = "Injured Person"> Injured Person</option>
+        <option value = "In Custody Death"> In-Custody Death</option>
+        <option value = "In Custody Injury"> In-Custody Injury</option>
+        <option value = "Discharge"> Discharge</option>
+      </select>
+    </div>
+    <div class = "user_select">
+        <input id="tags" type="text" placeholder= "Find 311 calls made in your neighborhood. Eg) Fells Point"/>
+        <input id="types" type="text" placeholder= "Find types of 311 calls made. Eg) Graffiti Removal"/>
+    </div>
+    <div class = "wrapper">
+      <div id = "map">
+        <script
+          src="https://code.jquery.com/jquery-3.1.1.min.js"
+          integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8="
+          crossorigin="anonymous">
+        </script>
+        <script async defer
+          src="https://maps.googleapis.com/maps/api/js?key=AIzaSyD5XOxBz-aPnckVG8b1jq3AGQuSShN-EA0&libraries=visualization,geometry&callback=createMap">
+        </script>
+
+        <script src = "js/script.js"></script>
+      </div>
+    </div>
+    <script src="js/jquery.js"></script>
+    <script src="js/jquery-ui.js"></script>
+  </body>
+</html>
